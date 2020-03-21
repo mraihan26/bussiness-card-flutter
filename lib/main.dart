@@ -37,55 +37,36 @@ class MyCard extends StatelessWidget {
                   letterSpacing: 2.5,
                 ),
               ),
-              Container(
-                color: Colors.yellow[700],
-                margin: EdgeInsets.symmetric(
-                  vertical: 25,
-                ),
-                padding: EdgeInsets.all(10),
-                child:Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-                    Icon(
-                      Icons.phone,
-                      size:24,
+              Card(
+                color : Colors.yellow[700],
+                child : ListTile(
+                  leading: Icon(Icons.phone,
+                    color: Colors.black,
+                      size: 24,
+                  ),
+                  title: Text('081316013536',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontFamily: 'SourceSansPro',
+                      fontSize: 24
                     ),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    Text(
-                      '081316013536',
-                      style : TextStyle(
-                        color: Colors.black,
-                        fontSize: 24,
-                        fontFamily: 'SourceSansPro',
-                      )
-                    )
-                  ],
+                  ),
                 )
               ),
-              Container(
-                  color: Colors.yellow[700],
-                  padding: EdgeInsets.all(10),
-                  child:Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      Icon(
-                        Icons.email,
-                        size:24,
+              Card(
+                  color : Colors.yellow[700],
+                  child : ListTile(
+                    leading: Icon(Icons.email,
+                      color: Colors.black,
+                      size: 24,
+                    ),
+                    title: Text('raihan2604@gmail.com',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontFamily: 'SourceSansPro',
+                          fontSize: 24
                       ),
-                      SizedBox(
-                        width: 20,
-                      ),
-                      Text(
-                          'raihan2604@gmail.com',
-                          style : TextStyle(
-                            color: Colors.black,
-                            fontSize: 24,
-                            fontFamily: 'SourceSansPro',
-                          )
-                      )
-                    ],
+                    ),
                   )
               ),
               Container(
